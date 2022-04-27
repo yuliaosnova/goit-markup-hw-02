@@ -1,0 +1,60 @@
+/* цвет основного текста #212121; */
+/* вторичный цвет текста #757575; */
+/* белый #FFFFFF */
+/* акцент #2196F3 */
+/* герой #2F303A; */
+/* бекгроунд 2 секции #E5E5E5;*/
+/* бекграунд 3 секции #F5F4FA; */
+body {
+  background-color: #ffffff;
+  color: #212121;
+}
+ul {
+  list-style: none;
+}
+.logo {
+  color: #2196f3;
+}
+.logo > span {
+  color: #212121;
+}
+/* site-nav*/
+.site-nav .link {
+  color: #212121;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+.site-nav .link.current {color: #2196f3;}
+.mail:hover {
+  color: #757575;
+}
+/* hero */
+.hero-title {
+  color: #ffffff;
+  background-color: #2f303a;
+}
+.benefits-list p {
+  color: #757575;
+}
+.team-list p {
+  color: #757575;
+}
+/* button */
+.button {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+.button.secondary {
+  color: #212121;
+  background-color: #F5F4FA;
+  border-color: #F5F4FA;
+}
+
+.button.primary {
+  color: #ffffff;
+  background-color: #2196f3;
+  border-color: #2196f3;
+}
+.projects p {color: #757575;}
