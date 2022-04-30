@@ -1,60 +1,142 @@
-/* цвет основного текста #212121; */
-/* вторичный цвет текста #757575; */
-/* белый #FFFFFF */
-/* акцент #2196F3 */
-/* герой #2F303A; */
-/* бекгроунд 2 секции #E5E5E5;*/
-/* бекграунд 3 секции #F5F4FA; */
-body {
-  background-color: #ffffff;
-  color: #212121;
-}
-ul {
-  list-style: none;
-}
-.logo {
-  color: #2196f3;
-}
-.logo > span {
-  color: #212121;
-}
-/* site-nav*/
-.site-nav .link {
-  color: #212121;
-}
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: #2196f3;
-}
-.site-nav .link.current {color: #2196f3;}
-.mail:hover {
-  color: #757575;
-}
-/* hero */
-.hero-title {
-  color: #ffffff;
-  background-color: #2f303a;
-}
-.benefits-list p {
-  color: #757575;
-}
-.team-list p {
-  color: #757575;
-}
-/* button */
-.button {
-  color: #ffffff;
-  background-color: #2196f3;
-}
-.button.secondary {
-  color: #212121;
-  background-color: #F5F4FA;
-  border-color: #F5F4FA;
+:root{
+  /* fonts */
+  --main-font:var(Roboto);
+  --secondary-font:var(Rralevay);
+
+  /* text colours */
+  --accent-cl:var(#2196F3);
+  --main-txt-cl:var(#757575);
+  --secondary-txt-cl:var(#212121);
+
+  /* background colors */
+  --main-bg:var(#FFFFFF);
+  --second-sec-bg:var(#E5E5E5);
+  --third-sec-bg:var(#F5F4FA);
 }
 
-.button.primary {
-  color: #ffffff;
-  background-color: #2196f3;
-  border-color: #2196f3;
+body {
+font-family: 'Roboto', sans-serif;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: #757575;
 }
-.projects p {color: #757575;}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+} 
+
+.link{text-decoration: none;
+color:currentColor;
+}
+.list {list-style: none;}
+
+/* header */
+
+.header {
+font-family: var(--main-font);
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color:#212121;
+}
+.link.navigation-link:hover,
+.link.navigation-link:focus {color:#2196F3;}
+
+.link.mail:hover,
+.link.mail:focus {color:#2196F3;}
+
+.header-phone {
+color:#757575;
+}
+
+/* hero */
+.hero {background-color: #2F303A;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.btn {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #ffffff;
+background-color: #2196F3;
+border-color: transparent;
+cursor: pointer;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+}
+
+/* benefits section */
+.title-benefits {
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+color: #212121;
+}
+.text-benefits {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+/* or 171% */
+}
+
+.title.business {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+
+.title.team {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+
+.team.title {
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+
+.position {
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+text-align: center;
+}
+/* footer */
