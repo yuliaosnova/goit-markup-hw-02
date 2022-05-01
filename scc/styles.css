@@ -197,6 +197,13 @@ body {
 .footer .link.mail {
   color: rgba(255, 255, 255, 0.6);
 }
+.footer .link.phone:hover,
+.footer .link.phone:focus {
+  color:var(--accent-cl) }
+
+.footer .link.mail:hover,
+.footer .link.mail:focus {
+  color:var(--accent-cl) }
 
 .secondary-btn {
   font-family: inherit;
